@@ -15,6 +15,8 @@ import {
   AlertCircle
 } from "lucide-react";
 import MagneticButton from "@/components/MagneticButton";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const packages = [
   {
@@ -133,24 +135,7 @@ export default function MaintenancePage() {
         <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px] opacity-30" />
       </div>
 
-      {/* Navbar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 py-4 px-6 md:px-12 flex justify-between items-center bg-[#050505]/60 backdrop-blur-xl border-b border-white/5">
-        <Link href="/" className="flex items-center space-x-2.5">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-purple-500 to-cyan-500 flex items-center justify-center font-extrabold text-white text-sm">
-            MI
-          </div>
-          <span className="text-sm font-bold tracking-widest text-white uppercase">
-            MUHAMMAD IRFAN<span className="text-purple-500">.</span>
-          </span>
-        </Link>
-        <Link 
-          href="/" 
-          className="inline-flex items-center space-x-2 text-xs font-semibold text-white/60 hover:text-white uppercase tracking-wider transition-colors"
-        >
-          <ArrowLeft className="w-4 h-4" />
-          <span>Back to Home</span>
-        </Link>
-      </nav>
+      <Header />
 
       {/* Main Section */}
       <main className="relative z-10 pt-32 pb-24 px-6 md:px-12 max-w-7xl mx-auto">
@@ -331,20 +316,7 @@ export default function MaintenancePage() {
 
       </main>
 
-      {/* Footer */}
-      <footer className="py-12 border-t border-white/5 bg-[#050505] relative z-10">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col sm:flex-row items-center justify-between text-xs text-white/40 font-medium tracking-wide">
-          <div className="flex items-center space-x-2.5 mb-4 sm:mb-0">
-            <div className="w-6 h-6 rounded bg-gradient-to-tr from-purple-500 to-cyan-500 flex items-center justify-center font-bold text-white text-[10px]">
-              MI
-            </div>
-            <span className="font-bold text-white uppercase tracking-widest font-mono">
-              Muhammad Irfan
-            </span>
-          </div>
-          <p>&copy; {new Date().getFullYear()} Muhammad Irfan. Engineered for performance and growth.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

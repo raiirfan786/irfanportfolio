@@ -20,6 +20,8 @@ import {
   Globe,
 } from "lucide-react";
 import MagneticButton from "@/components/MagneticButton";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const services = [
   { icon: Code2, label: "Custom WordPress Development" },
@@ -102,31 +104,7 @@ export default function ContactPage() {
         <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:40px_40px] opacity-30" />
       </div>
 
-      {/* Navbar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 py-4 px-6 md:px-12 flex justify-between items-center bg-[#050505]/60 backdrop-blur-xl border-b border-white/5">
-        <Link href="/" className="flex items-center space-x-2.5">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-purple-500 to-cyan-500 flex items-center justify-center font-extrabold text-white text-sm">
-            MI
-          </div>
-          <span className="text-sm font-bold tracking-widest text-white uppercase">
-            MUHAMMAD IRFAN<span className="text-purple-500">.</span>
-          </span>
-        </Link>
-
-        <div className="flex items-center space-x-3">
-          <Link
-            href="/"
-            className="flex items-center space-x-2 text-xs font-semibold text-white/50 hover:text-white transition-colors uppercase tracking-wider"
-          >
-            <ArrowLeft className="w-3.5 h-3.5" />
-            <span>Back to Portfolio</span>
-          </Link>
-          {/* Profile Photo */}
-          <div className="relative w-8 h-8 rounded-full overflow-hidden border-2 border-purple-500/40 shadow-lg shadow-purple-500/10">
-            <Image src="/profile.jpg" alt="Muhammad Irfan" fill sizes="32px" className="object-cover" />
-          </div>
-        </div>
-      </nav>
+      <Header />
 
       {/* Main Content */}
       <main className="relative z-10 pt-32 pb-24 px-6 md:px-12">
@@ -435,18 +413,7 @@ export default function ContactPage() {
         </div>
       </main>
 
-      {/* Footer */}
-      <footer className="relative z-10 py-8 border-t border-white/5 bg-[#050505]">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col sm:flex-row items-center justify-between text-xs text-white/30">
-          <div className="flex items-center space-x-2.5 mb-3 sm:mb-0">
-            <div className="w-6 h-6 rounded bg-gradient-to-tr from-purple-500 to-cyan-500 flex items-center justify-center font-bold text-white text-[10px]">
-              MI
-            </div>
-            <span className="font-bold text-white uppercase tracking-widest font-mono">Muhammad Irfan</span>
-          </div>
-          <p>&copy; {new Date().getFullYear()} Muhammad Irfan. Senior WordPress Developer.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }

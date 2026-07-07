@@ -16,8 +16,6 @@ import {
   MapPin, 
   Briefcase, 
   Check, 
-  Menu, 
-  X,
   Zap,
   LayoutGrid
 } from "lucide-react";
@@ -29,6 +27,8 @@ import Marquee from "@/components/Marquee";
 import ProjectCard from "@/components/ProjectCard";
 import TestimonialSlider from "@/components/TestimonialSlider";
 import MagneticButton from "@/components/MagneticButton";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 // Technologies Data for Marquee Ticker
 const technologies = [
@@ -149,7 +149,6 @@ const projects = [
 ];
 
 export default function Home() {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeSkillTab, setActiveSkillTab] = useState<"frontend" | "backend" | "cms" | "modern">("cms");
   
   const [expertiseIndex, setExpertiseIndex] = useState(0);
@@ -182,92 +181,7 @@ export default function Home() {
 
   return (
     <>
-      {/* Navigation Header */}
-      <nav className="fixed top-0 left-0 right-0 z-50 py-4 px-6 md:px-12 flex justify-between items-center transition-all bg-[#050505]/60 backdrop-blur-xl border-b border-white/5">
-        <a href="#" className="flex items-center space-x-2.5">
-          <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-purple-500 to-cyan-500 flex items-center justify-center font-extrabold text-white text-sm shadow-md shadow-purple-500/10">
-            MI
-          </div>
-          <span className="text-sm font-bold tracking-widest text-white uppercase font-display">
-            MUHAMMAD IRFAN<span className="text-purple-500">.</span>
-          </span>
-        </a>
-
-        {/* Desktop Menu */}
-        <div className="hidden md:flex items-center space-x-8 text-xs font-semibold text-white/50 tracking-wider uppercase">
-          <a href="#work" className="hover:text-white transition-colors">Work</a>
-          <a href="#about" className="hover:text-white transition-colors">About</a>
-          <a href="#services" className="hover:text-white transition-colors">Services</a>
-          <a href="#experience" className="hover:text-white transition-colors">Experience</a>
-          <a href="#education" className="hover:text-white transition-colors">Education</a>
-          <a href="/contact" className="hover:text-white transition-colors">Contact</a>
-        </div>
-
-        {/* Right Side: LinkedIn + Profile Photo + Hire Me */}
-        <div className="hidden md:flex items-center space-x-3">
-          {/* LinkedIn */}
-          <a
-            href="https://www.linkedin.com/in/muhammad-irfan-777476219/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center hover:bg-blue-500/20 hover:border-blue-500/30 transition-all"
-            title="LinkedIn"
-          >
-            <svg className="w-3.5 h-3.5 text-white/60 hover:text-blue-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
-              <rect width="4" height="12" x="2" y="9" />
-              <circle cx="4" cy="4" r="2" />
-            </svg>
-          </a>
-
-          {/* Profile Photo */}
-          <div className="relative w-8 h-8 rounded-full overflow-hidden border-2 border-purple-500/40 shadow-lg shadow-purple-500/10">
-            <Image src="/profile.jpg" alt="Muhammad Irfan" fill sizes="32px" className="object-cover" />
-          </div>
-
-          <MagneticButton>
-            <a
-              href="/contact"
-              className="inline-block px-5 py-2.5 rounded-full text-xs font-bold bg-white text-[#050505] hover:bg-purple-500 hover:text-white transition-all shadow-lg hover:shadow-purple-500/20"
-            >
-              Hire Me
-            </a>
-          </MagneticButton>
-        </div>
-
-        {/* Mobile Menu Icon */}
-        <button 
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)} 
-          className="md:hidden text-white/80 hover:text-white"
-          aria-label="Toggle Menu"
-        >
-          {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
-
-        {/* Mobile Menu */}
-        {mobileMenuOpen && (
-          <motion.div 
-            initial={{ opacity: 0, y: -20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            className="absolute top-full left-0 right-0 bg-[#050505]/95 backdrop-blur-2xl border-b border-white/10 p-6 flex flex-col space-y-4 text-sm font-bold uppercase tracking-wider md:hidden"
-          >
-            <a href="#work" onClick={() => setMobileMenuOpen(false)} className="text-white/70 hover:text-white py-2">Work</a>
-            <a href="#about" onClick={() => setMobileMenuOpen(false)} className="text-white/70 hover:text-white py-2">About</a>
-            <a href="#services" onClick={() => setMobileMenuOpen(false)} className="text-white/70 hover:text-white py-2">Services</a>
-            <a href="#experience" onClick={() => setMobileMenuOpen(false)} className="text-white/70 hover:text-white py-2">Experience</a>
-            <a href="#skills" onClick={() => setMobileMenuOpen(false)} className="text-white/70 hover:text-white py-2">Skills</a>
-            <a href="/contact" onClick={() => setMobileMenuOpen(false)} className="text-white/70 hover:text-white py-2">Contact</a>
-            <a 
-              href="/contact" 
-              onClick={() => setMobileMenuOpen(false)}
-              className="w-full text-center py-3 rounded-xl bg-purple-600 text-white font-bold"
-            >
-              Hire Me
-            </a>
-          </motion.div>
-        )}
-      </nav>
+      <Header />
 
       {/* Hero Section */}
       <section className="relative min-h-screen pt-32 pb-20 px-6 md:px-12 flex flex-col justify-center items-center overflow-hidden">
@@ -1192,20 +1106,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="py-12 border-t border-white/5 bg-[#050505]">
-        <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col sm:flex-row items-center justify-between text-xs text-white/40 font-medium tracking-wide">
-          <div className="flex items-center space-x-2.5 mb-4 sm:mb-0">
-            <div className="w-6 h-6 rounded bg-gradient-to-tr from-purple-500 to-cyan-500 flex items-center justify-center font-bold text-white text-[10px]">
-              MI
-            </div>
-            <span className="font-bold text-white uppercase tracking-widest font-mono">
-              Muhammad Irfan
-            </span>
-          </div>
-          <p>&copy; {new Date().getFullYear()} Muhammad Irfan. Engineered for performance and growth.</p>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }
