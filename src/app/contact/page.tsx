@@ -62,7 +62,7 @@ export default function ContactPage() {
     setErrorMsg("");
 
     try {
-      const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || "your_web3forms_access_key_here";
+      const accessKey = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY || "7bebb29e-fc53-4c62-8714-f8206c06df0a";
       
       const res = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
