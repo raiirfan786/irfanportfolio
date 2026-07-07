@@ -11,13 +11,13 @@ export default function Header() {
   const socialLinks = [
     {
       name: "GitHub",
-      icon: Github,
+      Component: Github,
       url: "https://github.com/raiirfan786",
       color: "hover:text-white"
     },
     {
       name: "LinkedIn",
-      icon: Linkedin,
+      Component: Linkedin,
       url: "https://www.linkedin.com/in/muhammad-irfan-777476219/",
       color: "hover:text-blue-400"
     }
@@ -50,21 +50,18 @@ export default function Header() {
         
         {/* Social Links */}
         <div className="flex items-center space-x-4 pl-4 border-l border-white/10">
-          {socialLinks.map((social) => {
-            const Icon = social.icon;
-            return (
-              <a
-                key={social.name}
-                href={social.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`text-white/60 ${social.color} transition-colors`}
-                title={social.name}
-              >
-                <Icon className="w-5 h-5" />
-              </a>
-            );
-          })}
+          {socialLinks.map((social) => (
+            <a
+              key={social.name}
+              href={social.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`text-white/60 ${social.color} transition-colors`}
+              title={social.name}
+            >
+              <social.Component className="w-5 h-5" />
+            </a>
+          ))}
         </div>
 
         <Link
@@ -78,20 +75,17 @@ export default function Header() {
       {/* Mobile Menu Toggle */}
       <div className="md:hidden flex items-center space-x-4">
         <div className="flex items-center space-x-3">
-          {socialLinks.map((social) => {
-            const Icon = social.icon;
-            return (
-              <a
-                key={social.name}
-                href={social.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={`text-white/60 ${social.color} transition-colors`}
-              >
-                <Icon className="w-4 h-4" />
-              </a>
-            );
-          })}
+          {socialLinks.map((social) => (
+            <a
+              key={social.name}
+              href={social.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`text-white/60 ${social.color} transition-colors`}
+            >
+              <social.Component className="w-4 h-4" />
+            </a>
+          ))}
         </div>
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}

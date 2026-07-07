@@ -10,17 +10,17 @@ export default function Footer() {
   const socialLinks = [
     {
       name: "GitHub",
-      icon: Github,
+      Component: Github,
       url: "https://github.com/raiirfan786",
     },
     {
       name: "LinkedIn",
-      icon: Linkedin,
+      Component: Linkedin,
       url: "https://www.linkedin.com/in/muhammad-irfan-777476219/",
     },
     {
       name: "Email",
-      icon: Mail,
+      Component: Mail,
       url: "mailto:irfandhudi.vu@gmail.com",
     }
   ];
@@ -83,21 +83,19 @@ export default function Footer() {
           <div>
             <h4 className="text-sm font-bold text-white mb-4 font-display">Connect</h4>
             <div className="flex items-center space-x-4 mb-6">
-              {socialLinks.map((social) => {
-                const Icon = social.icon;
-                return (
-                  <a
-                    key={social.name}
-                    href={social.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-white/60 hover:text-white hover:bg-purple-500/20 transition-all"
-                    title={social.name}
-                  >
-                    <Icon className="w-4 h-4" />
-                  </a>
-                );
-              })}
+              {socialLinks.map((social) => (
+                <a
+                  key={social.name}
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-white/60 hover:text-white hover:bg-purple-500/20 transition-all"
+                  title={social.name}
+                >
+                  <social.Component className="w-4 h-4" />
+                </a>
+              ))}
+            </div>
             </div>
             <Link
               href="/contact"
