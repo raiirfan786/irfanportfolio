@@ -314,7 +314,7 @@ export default function MaintenancePage() {
             <div>
               <h4 className="text-sm font-bold text-white font-display">Need Custom Support SLA?</h4>
               <p className="text-xs text-white/50 leading-relaxed font-normal">
-                Have custom servers, specialized setups, or need dedicated weekly hours? Let's curate a bespoke plan.
+                Have custom servers, specialized setups, or need dedicated weekly hours? Let&apos;s curate a bespoke plan.
               </p>
             </div>
           </div>

@@ -931,7 +931,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="p-6 rounded-2xl glass-panel border-white/5 bg-[#0b0b0b]/40">
               <h3 className="text-lg font-bold text-white mb-3 font-display">Virtual University of Pakistan</h3>
-              <p className="text-sm text-white/60 mb-2">Bachelor's degree, Computer Software Engineering</p>
+              <p className="text-sm text-white/60 mb-2">Bachelor&apos;s degree, Computer Software Engineering</p>
               <p className="text-xs text-white/50">Aug 2017 – Aug 2021</p>
               <div className="mt-4 text-[11px] text-white/50 space-y-2">
                 <p>Focused on software development lifecycle, database management, and web application architecture.</p>
