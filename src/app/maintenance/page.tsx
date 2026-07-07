@@ -9,7 +9,7 @@ import {
   Clock, 
   Database, 
   Zap, 
-  ArrowLeft,
+
   Mail,
   HelpCircle,
   AlertCircle

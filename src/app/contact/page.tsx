@@ -13,7 +13,6 @@ import {
   Check,
   AlertCircle,
   Loader2,
-  ArrowLeft,
   Calendar,
   Briefcase,
   Code2,
