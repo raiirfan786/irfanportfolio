@@ -115,9 +115,9 @@ export default function Footer() {
             <span>&copy; {currentYear} Muhammad Irfan. All rights reserved.</span>
           </div>
           <div className="flex items-center space-x-6">
-            <a href="/contact" className="hover:text-white transition-colors">
+            <Link href="/contact" className="hover:text-white transition-colors">
               Contact
-            </a>
+            </Link>
           </div>
         </div>
       </div>
