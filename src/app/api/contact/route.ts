@@ -25,7 +25,7 @@ export async function POST(req: NextRequest) {
     // Email to Muhammad Irfan (notification)
     await transporter.sendMail({
       from: `"Portfolio Contact" <${process.env.GMAIL_USER}>`,
-      to: "irfandhudi.vu@gmail.com",
+      to: "raiirfan1999@gmail.com",
       replyTo: email,
       subject: `[Portfolio] ${subject || "New Contact Request"} — from ${name}`,
       html: `
@@ -67,7 +67,7 @@ export async function POST(req: NextRequest) {
             </div>
           </div>
           <div style="padding: 20px 32px; background: #0a0a0a; text-align: center; color: rgba(255,255,255,0.3); font-size: 11px;">
-            Sent from Muhammad Irfan&apos;s Portfolio — irfandhudi.vu@gmail.com
+            Sent from Muhammad Irfan&apos;s Portfolio — raiirfan1999@gmail.com
           </div>
         </div>
       `,
@@ -102,7 +102,7 @@ export async function POST(req: NextRequest) {
             </p>
           </div>
           <div style="padding: 20px 32px; background: #0a0a0a; text-align: center; color: rgba(255,255,255,0.3); font-size: 11px;">
-            📧 irfandhudi.vu@gmail.com &nbsp;|&nbsp; 📱 +92 (303) 797-6657
+            📧 raiirfan1999@gmail.com &nbsp;|&nbsp; 📱 +92 (303) 797-6657
           </div>
         </div>
       `,

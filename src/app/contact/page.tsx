@@ -342,13 +342,13 @@ export default function ContactPage() {
               <div className="rounded-2xl bg-white/[0.03] border border-white/[0.06] p-6 space-y-5">
                 <h3 className="text-xs font-bold uppercase tracking-widest text-white/30 font-mono">Direct Contact</h3>
 
-                <a href="mailto:irfandhudi.vu@gmail.com" className="flex items-start space-x-4 group">
+                <a href="mailto:raiirfan1999@gmail.com" className="flex items-start space-x-4 group">
                   <div className="w-10 h-10 rounded-xl bg-purple-500/10 border border-purple-500/20 flex items-center justify-center flex-shrink-0 group-hover:bg-purple-500/20 transition-all">
                     <Mail className="w-4 h-4 text-purple-400" />
                   </div>
                   <div>
                     <div className="text-[10px] text-white/30 uppercase tracking-wider mb-0.5">Email</div>
-                    <div className="text-sm font-semibold text-white group-hover:text-purple-400 transition-colors">irfandhudi.vu@gmail.com</div>
+                    <div className="text-sm font-semibold text-white group-hover:text-purple-400 transition-colors">raiirfan1999@gmail.com</div>
                   </div>
                 </a>
 

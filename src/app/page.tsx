@@ -363,12 +363,12 @@ export default function Home() {
               Passionate WordPress Developer Who Builds High-Impact Digital Products
             </h2>
             <p className="text-sm sm:text-base text-white/60 leading-relaxed font-normal">
-              Muhammad Irfan is a passionate Full Stack WordPress Developer with 5+ years of experience specializing in front-end development, custom WordPress themes, WooCommerce, Laravel, and REST API integrations. He focuses on performance optimization, responsive UI, and business-driven websites that convert.
+              I am a passionate Full Stack WordPress Developer with 5+ years of experience specializing in front-end development, custom WordPress themes, WooCommerce, Laravel, and REST API integrations. He focuses on performance optimization, responsive UI, and business-driven websites that convert.
             </p>
           </div>
 
           {/* Bento Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-12 gap-5 auto-rows-[180px]">
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-5">
             
             {/* Box 1: Core Focus (Big Box) */}
             <motion.div 
@@ -1039,7 +1039,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
             <MagneticButton>
               <a
-                href="mailto:irfandhudi.vu@gmail.com"
+                href="mailto:raiirfan1999@gmail.com"
                 className="inline-flex items-center space-x-2.5 px-8 py-4 rounded-full text-xs font-extrabold uppercase bg-white text-[#050505] hover:bg-purple-500 hover:text-white transition-all shadow-lg hover:shadow-purple-500/20"
               >
                 <Calendar className="w-4.5 h-4.5" />
@@ -1049,7 +1049,7 @@ export default function Home() {
 
             <MagneticButton>
               <a
-                href="mailto:irfandhudi.vu@gmail.com"
+                href="mailto:raiirfan1999@gmail.com"
                 className="inline-flex items-center space-x-2.5 px-8 py-4 rounded-full text-xs font-extrabold uppercase bg-white/5 border border-white/10 text-white hover:bg-white/10 hover:border-white/20 transition-all"
               >
                 <MessageSquare className="w-4.5 h-4.5" />
@@ -1086,11 +1086,11 @@ export default function Home() {
               <span>GitHub</span>
             </a>
             <a 
-              href="mailto:irfandhudi.vu@gmail.com" 
+              href="mailto:raiirfan1999@gmail.com" 
               className="flex items-center justify-center space-x-2 hover:text-white transition-colors py-2"
             >
               <Mail className="w-4 h-4 text-purple-400" />
-              <span>irfandhudi.vu@gmail.com</span>
+              <span>raiirfan1999@gmail.com</span>
             </a>
             <a 
               href="https://wa.me/923037976657" 
