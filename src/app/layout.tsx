@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import SmoothScroll from "@/components/SmoothScroll";
 import "./globals.css";
 
@@ -67,6 +68,7 @@ export default function RootLayout({
             <div className="relative z-10">{children}</div>
           </div>
         </SmoothScroll>
+        <SpeedInsights />
       </body>
     </html>
   );
