@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import SmoothScroll from "@/components/SmoothScroll";
+import { Analytics } from '@vercel/analytics/next';
 import "./globals.css";
 
 const poppins = Poppins({
@@ -67,6 +68,7 @@ export default function RootLayout({
             <div className="relative z-10">{children}</div>
           </div>
         </SmoothScroll>
+        <Analytics />
       </body>
     </html>
   );
