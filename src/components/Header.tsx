@@ -68,9 +68,16 @@ export default function Header() {
             </a>
           ))}
         </div>
+        <a
+          href="/Muhammad_Irfan - Full stack developer.pdf"
+          download
+          className="ml-4 px-4 py-2 rounded-full text-xs font-semibold border border-white/10 text-white/80 hover:text-white transition-all"
+        >
+          Download CV
+        </a>
         <Link
           href="/contact"
-          className="ml-4 px-5 py-2 rounded-full text-xs font-bold uppercase bg-white text-[#050505] hover:bg-purple-500 hover:text-white transition-all shadow-lg"
+          className="ml-2 px-5 py-2 rounded-full text-xs font-bold uppercase bg-white text-[#050505] hover:bg-purple-500 hover:text-white transition-all shadow-lg"
         >
           Get In Touch
         </Link>
@@ -157,6 +164,14 @@ export default function Header() {
               >
                 Experience
               </Link>
+                <a
+                href="/Muhammad_Irfan - Full stack developer.pdf"
+                download
+                className="text-sm text-white/80 hover:text-white transition-colors"
+              >
+                Download CV
+              </a>
+     
               <div className="flex items-center gap-3 pt-2 border-t border-white/10">
                 {socialLinks.map((social) => (
                   <a
