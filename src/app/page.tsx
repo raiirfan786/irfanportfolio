@@ -265,7 +265,7 @@ export default function Home() {
               className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-white/5"
             >
               <div>
-                <span className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">6</span>
+                <span className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">6 +</span>
                 <span className="text-[10px] uppercase font-bold tracking-wider text-white/40 block mt-1">Years Experience</span>
               </div>
               <div>
