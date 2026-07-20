@@ -227,7 +227,7 @@ export default function Home() {
               transition={{ duration: 0.6, delay: 0.2 }}
               className="text-base sm:text-lg text-white/60 font-normal leading-relaxed max-w-xl"
             >
-              Passionate Full Stack WordPress Developer with 6 years of experience specializing in front-end development, custom themes, WooCommerce stores, and performance optimization. I build responsive, fast, and user-friendly sites tailored to business goals.
+              Passionate Full Stack WordPress Developer with 6 + years of experience specializing in front-end development, custom themes, WooCommerce stores, and performance optimization. I build responsive, fast, and user-friendly sites tailored to business goals.
             </motion.p>
 
             {/* CTA Buttons */}
