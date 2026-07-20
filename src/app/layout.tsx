@@ -12,7 +12,7 @@ const poppins = Poppins({
 
 export const metadata: Metadata = {
   title: "Muhammad Irfan | Senior WordPress Developer | WooCommerce Expert | Full Stack Developer",
-  description: "Muhammad Irfan is a Senior Full Stack WordPress Developer with 5+ years of experience in custom WordPress development, WooCommerce, plugin development, API integrations, Laravel, Next.js, and website optimization.",
+  description: "Muhammad Irfan is a Senior Full Stack WordPress Developer with 6 years of experience in custom WordPress development, WooCommerce, plugin development, API integrations, Laravel, Next.js, and website optimization.",
   keywords: [
     "Muhammad Irfan",
     "WordPress Developer",
@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Muhammad Irfan | Senior WordPress Developer | WooCommerce Expert",
-    description: "Senior Full Stack WordPress Developer with 5+ years of experience building enterprise-grade, lightning-fast solutions.",
+    description: "Senior Full Stack WordPress Developer with 6 years of experience building enterprise-grade, lightning-fast solutions.",
   },
   robots: {
     index: true,

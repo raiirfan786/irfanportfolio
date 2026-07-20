@@ -265,7 +265,7 @@ export default function Home() {
               className="grid grid-cols-2 sm:grid-cols-4 gap-6 pt-8 border-t border-white/5"
             >
               <div>
-                <span className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">5+</span>
+                <span className="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">6</span>
                 <span className="text-[10px] uppercase font-bold tracking-wider text-white/40 block mt-1">Years Experience</span>
               </div>
               <div>
@@ -363,7 +363,7 @@ export default function Home() {
               Passionate WordPress Developer Who Builds High-Impact Digital Products
             </h2>
             <p className="text-sm sm:text-base text-white/60 leading-relaxed font-normal">
-              I am a passionate Full Stack WordPress Developer with 5+ years of experience specializing in front-end development, custom WordPress themes, WooCommerce, Laravel, and REST API integrations. He focuses on performance optimization, responsive UI, and business-driven websites that convert.
+              I am a passionate Full Stack WordPress Developer with 6 years of experience specializing in front-end development, custom WordPress themes, WooCommerce, Laravel, and REST API integrations. He focuses on performance optimization, responsive UI, and business-driven websites that convert.
             </p>
           </div>
 
