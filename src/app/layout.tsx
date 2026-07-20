@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Muhammad Irfan | Senior WordPress Developer | WooCommerce Expert",
-    description: "Senior Full Stack WordPress Developer with 6 years of experience building enterprise-grade, lightning-fast solutions.",
+    description: "Senior Full Stack WordPress Developer with 6+ years of experience building enterprise-grade, lightning-fast solutions.",
   },
   robots: {
     index: true,

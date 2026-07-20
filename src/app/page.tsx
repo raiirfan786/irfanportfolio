@@ -363,7 +363,7 @@ export default function Home() {
               Passionate WordPress Developer Who Builds High-Impact Digital Products
             </h2>
             <p className="text-sm sm:text-base text-white/60 leading-relaxed font-normal">
-              I am a passionate Full Stack WordPress Developer with 6 years of experience specializing in front-end development, custom WordPress themes, WooCommerce, Laravel, and REST API integrations. He focuses on performance optimization, responsive UI, and business-driven websites that convert.
+              I am a passionate Full Stack WordPress Developer with 6+ years of experience specializing in front-end development, custom WordPress themes, WooCommerce, Laravel, and REST API integrations. He focuses on performance optimization, responsive UI, and business-driven websites that convert.
             </p>
           </div>
 
